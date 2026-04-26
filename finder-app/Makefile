@@ -14,9 +14,6 @@ build/%.o: %.c
 	@mkdir -p build
 	$(CC) $(CFLAGS) -c $< -o $@
 
-file_type_get: $(TARGET)
-	@file writer > ../assignments/assignment2/fileresult.txt
-
 clean:
 	@rm -rf build
 	@rm -rf writer
